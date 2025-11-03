@@ -1,29 +1,3 @@
-TODO: Implementar menus m1/m2/m3
-// Exemplo de menu principal: 
-/// Exibe as opções do Menu Principal, indexando pelas funções M1, M2, M3, Exit. 
-pub fn display_main_menu() { 
-  io.println("\n---   Menu Principal (Digite a função) ---") 
-  io.println("Opções:") 
-  io.println("  m1(): Processamento de Dados") 
-  io.println("  m2(): Configurações do Sistema") 
-  io.println("  m3(): Relatórios e Logs") 
-  io.println("  exit(): Sair da Simulação") 
-} 
- 
-/// Simula a entrada na opção M1 (Processamento de Dados). 
-pub fn m1() -> MainMenu { 
-  display_submenu("Processamento de Dados", [ 
-    #(M1A, "Executar Limpeza de Dados"), 
-    #(M1B, "Agendar Tarefa Noturna"), 
-    #(Back, "Retornar ao Menu Principal"), 
-  ]) 
- 
-  // O usuário "digitaria" M1A, M1B ou Back em seguida 
-  io.println("\n(Próxima simulação deve chamar M1A, M1B ou Back)") 
-  M1 
-}
-
-// Exemplo mais completo de docs/menu.gleam:
 import gleam/io
 import gleam/list
 
